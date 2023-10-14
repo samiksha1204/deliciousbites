@@ -5,12 +5,13 @@ import SubscribeForm from "./SubscribeForm";
 export default function Foot() {
   return (
     <div className="h-auto bottom-0 md:h-12 rounded-b-xl p-4 md:p-2 lg:p-20 xl:p-[145px] text-write text-left flex items-center justify-between purple-gradient">
-      <div className="h-auto md:h-12 w-full rounded-xl md:p-[90px] bg-white p-2 flex items-center justify-between">
+      <div className="h-auto   md:h-12 w-full rounded-xl md:p-[90px] bg-white p-2 flex items-center justify-between">
         <h1 className="font-bold text-xl md:text-sm">
           Stay Updated With Our Latest News
           <p className="font-normal text-sm md:text-base">
             Get our latest updates, news, offers, and much more directly to your
-            inbox. Subscribe and join our community.
+            inbox. <br />
+            Subscribe and join our community.
           </p>
           <SubscribeForm />
         </h1>

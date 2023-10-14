@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SubscribeForm() {
   return (
-    <div className="mt-6 flex gap-x-4">
+    <div className="mt-6 flex gap-x-4 mb-6">
       <label htmlFor="email-address" className="sr-only">
         Email address
       </label>
@@ -18,7 +18,7 @@ export default function SubscribeForm() {
       />
       <button
         type="submit"
-        className="flex-none rounded-md bg-texts px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+        className="flex-none rounded-md bg-texts px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
       >
         Subscribe
       </button>

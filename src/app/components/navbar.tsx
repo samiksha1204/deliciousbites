@@ -1,11 +1,11 @@
 import React from "react";
 import Menus from "./Menus";
 import Link from "next/link";
+import Cart from "./Cart";
 
 const links = [
   { id: 1, title: "HOME", url: "/" },
   { id: 2, title: "MENU", url: "/" },
-  { id: 3, title: "ABOUT", url: "/" },
   { id: 4, title: "CONTACT", url: "/" },
 ];
 const User = false;
@@ -28,6 +28,7 @@ export default function Nav() {
         ) : (
           <Link href="/orders">Orders</Link>
         )}
+        <Cart />
       </div>
 
       {/* Mobile View */}
