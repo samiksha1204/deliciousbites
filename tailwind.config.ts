@@ -12,6 +12,7 @@ const config: Config = {
       colors: {
         // Primary color
         write: "#D71313",
+        texts: "#155C6E",
 
         // Add more custom colors as needed
       },

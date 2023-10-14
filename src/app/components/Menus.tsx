@@ -1,21 +1,21 @@
 "use client";
 import Link from "next/link";
-import { link } from "fs";
 import React, { useState } from "react";
 import { CiMenuFries, CiMenuKebab } from "react-icons/ci";
 
 const links = [
   { id: 1, title: "HOME", url: "/" },
   { id: 2, title: "MENU", url: "/" },
-  { id: 3, title: "ABOUT US", url: "/" },
-  { id: 4, title: "CONTACT US", url: "/" },
+  { id: 3, title: "ABOUT", url: "/" },
+  { id: 4, title: "CONTACT", url: "/" },
 ];
 const User = false;
+
 const Menus: React.FC = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpenClick = () => {
-    setOpen(true);
+    setOpen(!open);
   };
 
   const handleCloseClick = () => {
@@ -23,19 +23,14 @@ const Menus: React.FC = () => {
   };
 
   return (
-    <div>
-      {!open ? (
-        <button onClick={handleOpenClick}>
-          <CiMenuKebab />
-        </button>
-      ) : (
-        <button onClick={handleCloseClick}>
-          <CiMenuFries />
-        </button>
-      )}
+    <div className="relative">
+      {/* Show the menu icon only on mobile devices */}
+      <button onClick={handleOpenClick} className="md:hidden">
+        {open ? <CiMenuFries /> : <CiMenuKebab />}
+      </button>
 
-      {!open && (
-        <div className="text-write absolute right-40 top-50 flex flex-col  gap-4 items-end justify-center text-14 z-10">
+      {open && (
+        <div className="absolute h-auto top-5 right-0  p-4 shadow-md flex flex-col gap-4 items-center justify-center min-w-full z-index-2 text-sm md:hidden">
           {links.map((item) => (
             <Link href={item.url} key={item.id}>
               {item.title}
