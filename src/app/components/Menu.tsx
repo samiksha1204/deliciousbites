@@ -6,12 +6,11 @@ import Cart from "./Cart";
 
 const links = [
   { id: 1, title: "HOME", url: "/" },
-  { id: 2, title: "MENU", url: "/" },
-  { id: 4, title: "CONTACT", url: "/" },
+  { id: 2, title: "MENU", url: "/menu" },
 ];
 const User = false;
 
-const Menus: React.FC = () => {
+const Menu = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpenClick = () => {
@@ -23,7 +22,7 @@ const Menus: React.FC = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="relative hover:text-texts">
       {/* Show the menu icon only on mobile devices */}
       <button onClick={handleOpenClick} className="md:hidden">
         {open ? <CiMenuFries /> : <CiMenuKebab />}
@@ -54,4 +53,4 @@ const Menus: React.FC = () => {
   );
 };
 
-export default Menus;
+export default Menu;

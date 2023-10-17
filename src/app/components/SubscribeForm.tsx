@@ -18,7 +18,7 @@ export default function SubscribeForm() {
       />
       <button
         type="submit"
-        className="flex-none rounded-md bg-texts px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+        className="flex-none rounded-md bg-red-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-texts focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
       >
         Subscribe
       </button>

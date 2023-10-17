@@ -11,13 +11,14 @@ const config: Config = {
       // Define your custom colors
       colors: {
         // Primary color
-        write: "#D71313",
-        texts: "#155C6E",
+        write: "#907163",
+        texts: "#907163",
+        b: "#C7D2FF",
 
         // Add more custom colors as needed
       },
       animation: {
-        blob: "blob 7s infinite",
+        blob: "blob 4s infinite",
       },
       keyframes: {
         blob: {
