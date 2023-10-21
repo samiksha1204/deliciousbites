@@ -24,7 +24,9 @@ export default function CategoryPage() {
           </div>
           <div className="flex items-center justify-between gap-2 font-bold ">
             <h1 className="text-2xl uppercase p-2">{item.title}</h1>
-            <h2 className="group:hover-hidden text-xl p-2">${item.price}</h2>
+            <h2 className="group:hover-hidden text-xl p-2">
+              Rs. {item.price.toFixed(2)}
+            </h2>
             <button className="rounded-md group-hover:block m-2 bg-red-500 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-texts">
               Add to Cart
             </button>

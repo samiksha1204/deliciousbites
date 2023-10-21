@@ -330,27 +330,50 @@ export const pizzas: Products = [
   },
 ];
 
-export const singleProduct: Product = {
-  id: 1,
-  title: "Sicilian",
-  desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella cheese, delivering a kick with every bite.",
-  img: "/temporary/p1.png",
-  price: 24.9,
-  options: [
-    {
-      title: "Small",
-      additionalPrice: 0,
-    },
-    {
-      title: "Medium",
-      additionalPrice: 4,
-    },
-    {
-      title: "Large",
-      additionalPrice: 6,
-    },
-  ],
-};
+export const singleProducts: Product[] = [
+  {
+    id: 1,
+    title: "Sicilian",
+    desc: "Ignite your taste buds with a fiery combination of spicy pepperoni, jalapeños, crushed red pepper flakes, and melted mozzarella cheese, delivering a kick with every bite.",
+    img: "/temporary/p1.png",
+    price: 24.9,
+    options: [
+      {
+        title: "Small",
+        additionalPrice: 0,
+      },
+      {
+        title: "Medium",
+        additionalPrice: 4,
+      },
+      {
+        title: "Large",
+        additionalPrice: 6,
+      },
+    ],
+  },
+  {
+    id: 2,
+    title: "Four Cheese",
+    desc: "Experience pure cheesy bliss with a melty blend of mozzarella, cheddar, provolone, and Parmesan cheeses, creating a rich and indulgent pizza experience.",
+    img: "/temporary/p12.png",
+    price: 22.9,
+    options: [
+      {
+        title: "Small",
+        additionalPrice: 0,
+      },
+      {
+        title: "Medium",
+        additionalPrice: 4,
+      },
+      {
+        title: "Large",
+        additionalPrice: 6,
+      },
+    ],
+  },
+];
 
 type Menu = {
   id: number;

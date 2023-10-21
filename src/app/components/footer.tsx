@@ -25,7 +25,7 @@ export default function Foot() {
             height={200}
             blurDataURL="data:..."
             placeholder="blur"
-            className=" hover:translate-x-[5rem]"
+            className=" hover:translate-x-[5rem] duration-500"
           />
         </div>
       </div>
